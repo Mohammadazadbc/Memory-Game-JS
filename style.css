@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+
+}
+
+body{
+  background-color:#31211d;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.grid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  width: 325px;
+  height: auto;
+  margin: rem;
+
+}
+
+
+
+img{
+  width: 75px;
+  height: 75px;
+  margin: 3px;
+}
+
+.timer{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-end;
+  position: relative;
+  top: 7%;
+}
+#palym{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px white;
+}
+#stop {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1%;
+  right: 8%;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px white;
+}
+
+
+
+@media screen and (min-width:470px){
+  .grid{
+    width: 470px;
+    height: 500px;
+    margin-left: 6px;
+  }
+
+  img{
+      width: 100px;
+      height: 100px;
+  }
+  .timer{
+    top: 2%;
+  }
+}
+
+@media screen and (min-width:700px){
+  .grid{
+    width: 600px;
+    height: 500px;
+    top: 40%;
+  }
+
+  img{
+      width: 140px;
+      height: 140px;
+  }
+  .timer{
+    top: 2%;
+  }
+  #stop {
+    right: 4%;
+  }
+}
+
+@media screen and (min-width:1000px){
+  .grid{
+    width: 800px;
+    height: 500px;
+    top: 40%;
+  }
+
+  img{
+      width: 160px;
+      height: 160px;
+  }
+
+  .timer{
+    top:1%;
+    margin-bottom: 2rem;
+  }
+  #stop {
+    right: 4%;
+    width: 40px;
+    height: 40px;
+  }
+  #palym{
+    width: 40px;
+    height: 40px;
+  }
+}
